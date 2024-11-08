@@ -1,4 +1,16 @@
 {
+    "name": "@ashishdotme/npm-library-starter",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "tsc --watch",
+        "build": "tsc",
+        "lint": "eslint .",
+        "lint:fix": "eslint --fix .",
+        "format": "prettier --check .",
+        "format:fix": "prettier --write .",
+        "typecheck": "tsc",
+        "prepare": "npm run build"
+    },
     "author": {
         "name": "Ashish Patel",
         "email": "ashishsushilpatel@gmail.com",
@@ -26,22 +38,11 @@
     ],
     "license": "MIT",
     "main": "dist/index.js",
-    "name": "@ashishdotme/npm-library-starter",
+
     "repository": {
         "type": "git",
         "url": "https://github.com/ashishdotme/npm-library-starter"
     },
-    "scripts": {
-        "start": "tsc --watch",
-        "build": "tsc",
-        "lint": "eslint .",
-        "lint:fix": "eslint --fix .",
-        "format": "prettier --check .",
-        "format:fix": "prettier --write .",
-        "typecheck": "tsc",
-        "prepare": "npm run build"
-    },
     "type": "module",
-    "types": "dist/types/index.d.ts",
-    "version": "1.0.0"
+    "types": "dist/types/index.d.ts"
 }
